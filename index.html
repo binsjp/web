@@ -1,8 +1,9 @@
 <html>
     <head>
 
-        <title>binsjp</title> <!-- 주소창 이름-->
+        <title>mmm</title> <!-- 주소창 이름-->
   <meta charset="UTF-8">
+       
        
         <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> <!-- css사용. -->
        
@@ -10,32 +11,44 @@
        <!--link rel="stylesheet" href="styles.css"-->
         <style>
              
+      
+table, th, td {
+  border: 0px solid floralwhite;
+  border-collapse: collapse;
+}
+
              
              h1 {
-                
-                 font-family: fantasy;
+                color: floralwhite;
+                 font-family: monospace;
                  font-size: 300%;
+                  text-align: center;
+                 
              }
              
               h2 {
          
-                 font-family: cursive;
-                 font-size: 200%;
+                 font-family: monospace;
+                 font-size: 100%;
+                  text-align: center
              }
              
               h3 {
-                 color: darkblue;
-                 font-family: fantasy;
+                 color: grey;
+                 font-family: monospace;
                  font-size: 100%;
+                   text-align: center;
              }
              
               p {
-                 color: red;
-                 font-family: cursive;
-                 font-size: 160%;
-                border: 10px solid green; 
+                 color: ghostwhite;
+                 font-family: monospace;
+                 font-size: 200%;
+                border: 1px solid none; 
        padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;
-                margin-top: 50px; margin-right: 100px; margin-left: 100px; 
+                margin-top: 20px; margin-right: 10px; margin-left: 5px; 
+                   text-align: center;
+                
                  
              } <!--보더는 테두리, 패딩은 보더 안쪽 크기, 마진은 보더 바깥 크기-->
              
@@ -46,41 +59,136 @@
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 40px;
+  padding-left: 50px;
 }
         
         </style>
     </head>
-    <body>
+    <body style="background-color: cornflowerblue; color:white">
 
-        <p style="color:darkseagreen; font-size: 20; font-family:monospace">* Willkommen * 환영합니다 * Welcome *</p>
+      
+    <!--iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials" height="200px" width="50%" style="border:5px solid black;">
+</iframe>
+
+<iframe src="/default.asp" width="70%" height="300" style="border:5px solid black;">
+</iframe>
+
+<iframe src="/default.asp" width="100%" height="100" style="border:none;">
+</iframe-->
         
-            <p style="font-size: 18; font-family:monospace">Resin-Accessoires made by <b>binsjp</b>© </p>
-            <img src="keyring_1.jpg" alt="sso" style="width:200px;height:200px;">
-           <img src="shaker_4.png" alt="shakers" style="width:200px;height:200px;">
+        <table>
+            <colgroup>
+    <!--col span="2" style="background-color:darkgray"-->
+    <col style="background-color: none">
+               
+  </colgroup>
+            
+  <tr>
+    <th height="200"; colspan="3">  <h1> &#10024; Willkommen &#10024; 환영합니다 &#10024; Welcome &#10024;</h1>
+         <p style="font-size: 150%; font-family:monospace">Resin-Accessoires made by <b>binsjp</b>© </p></th>
+ </tr>
+  
+            
+ 
+            
+  <tr>
+    <td height="500;" width="20%">  
+        
+        <a href="Shakers.html"><p>Shakers</p></a>
     
-        <img src="work.png" alt="uv" style="width:200px;height:200px;">
-
-                
-        <p style="color:blue;">&#129505;hallo</p>
+            <a href="Keyring.html">
+          <p>Keyrings</p></a>
         
-        
-            <a href="Shakers.html">
-          <p style="color:darkseagreen; font-size:16; font-family: monospace">Shakers</p></a>
+    
+    
+           <a href="Nametags.html"><p>Nametags</p></a>
+    
+    
        
+        <a href="Earrings.html"><p>Earrings<!-- anker, hypertext-referens--></p></a>
+    
+    
+    </td>
+    
+    
+      
+      <td colpan="2">
+          
+         
+       <!--img src="https://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"-->
+        
+         
+            <p><img src="keyring_1.jpg" alt="sso" style="width:auto;height:300px;">
+                
+           <img src="shaker_4.png" alt="shakers" style="width:auto;height:300px;">
+    
+                <img src="work.png" alt="uv" style="width:auto;height:300px;"></p>
+
+      
+      </td>
+    
+  
+  
+  </tr>
+  
+</table>
         
         
-       <a href="Keyring.html"><p style="color:cadetblue; font-size:16; font-family:monospace">Keyrings</p></a> <!-- paragraph p 줄바꿈 자동임. 꾸며주기-->
+   <hr style="color: aliceblue"><!-- 줄긋기-->
+     
+            <h3>Copyright Seunghee</h3>
         
-           <a href="Nametags.html"><p style="color:darkseagreen; font-size:16; font-family:monospace">Nametags</p></a>
-        
-        <a href="Earrings.html"><p style="color:cadetblue; font-size:16; font-family: monospace">Earrings<!-- anker, hypertext-referens--></p></a>
-        <hr><!-- 줄긋기-->
-        copyright seunghee 
+       
+        <!--h3 style="color:floralwhite;">&#129505;Menu&#129505;</h3>
         
         
+          <a href="Shakers.html">
+              <p><input type="button" value="Shakers" onclick="
+        document.querySelector('body').style.backgroundColor='blue';
+                document.querySelector('body').style.color='white'";></p></a>
+                                                              
+       
+       <a href="Keyring.html">
+         <p> <input type="button" value="Keyrings" onclick="
+        document.querySelector('body').style.backgroundColor='blue';
+                document.querySelector('body').style.color='white'";></p>
+           <!--p style="color:cadetblue; font-size:16; font-family:monospace">Keyrings</p></a--> <!-- paragraph p 줄바꿈 자동임. 꾸며주기-->
+         
+        
+           <!--a href="Nametags.html">
+               <p><input type="button" value="Nametags" onclick="
+        document.querySelector('body').style.backgroundColor='blue';
+                document.querySelector('body').style.color='white'";></p>
+               <!--p style="color:darkseagreen; font-size:16; font-family:monospace">Nametags</p></a-->
+            
+        
+        <!--a href="Earrings.html">
+            <p><input type="button" value="Earrings" onclick="
+        document.querySelector('body').style.backgroundColor='blue';
+                      document.querySelector('body').style.color='white'";></p></a>
+               
+               
+            
+            
+        <!--p style="color:cadetblue; font-size:16; font-family: monospace">Earrings</p></a--><!-- anker, hypertext-referens-->
+        
+        
+      <br>
+            
+        
+               
+           
+        <h2 id="demo"></h2>
+            <script>
+            var d= new Date("2020/11/12");
+            document.getElementById("demo").innerHTML=d;
+            </script>
         <br>
-        <h1>header1</h1>
+        
+        
+        
+        <!--h1>header1</h1>
+        
         <br>
         <h2>header2</h2>
         <br>
@@ -94,13 +202,13 @@
         <br>
         
         <ol> <!--순서list-->
-  <li>Coffee</li>
+  <!--li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ol>
 
 <ul><!--순서x-->
-  <li>Coffee</li>
+  <!--li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ul>
@@ -119,8 +227,9 @@
   </menu>
   <menuitem label="Email This Page"
   onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
-</menu>
+</menu-->
         
+
     </body>
     
 </html>
