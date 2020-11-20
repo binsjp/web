@@ -3,23 +3,121 @@
 
         <title>빈집:binsjp</title> <!-- 주소창 이름-->
   <meta charset="UTF-8">
-       <link rel="shortcut icon" type="image/x-icon" href="https://mblogthumb-phinf.pstatic.net/20150203_234/bokyung7409_1422949850339POasm_PNG/%C7%CF%C6%AE23.png?type=w2">
+       <link rel="shortcut icon" type="image/x-icon" href="https://mblogthumb-phinf.pstatic.net/20150203_234/bokyung7409_1422949850339POasm_PNG/%C7%CF%C6%AE23.png?type=w2"> 
        
-        <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> <!-- css사용. -->
-       
+        <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> 
         
-       <!--link rel="stylesheet" href="styles.css"-->
+        
+        
         <style>
-             
-      
+            @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  background: -webkit-linear-gradient(right, #8e9eab, #eef2f3);
+  background: linear-gradient(to bottom, lavender, lightpink);
+}
+
+body {
+  margin: 10% auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+.select {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 325px;
+  color: lavender;
+  vertical-align: left;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+}
+.select .placeholder {
+  position: relative;
+  display: block;
+  background-color: #393d41;
+  z-index: 1;
+  padding: 1em;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.select .placeholder:hover {
+  background: #34383c;
+}
+.select .placeholder:after {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: 'FontAwesome';
+  content: '\f078';
+  z-index: 10;
+}
+.select.is-open .placeholder:after {
+  content: '\f077';
+}
+.select.is-open ul {
+  display: block;
+}
+.select.select--white .placeholder {
+  background: #fff;
+  color: #999;
+}
+.select.select--white .placeholder:hover {
+  background: #fafafa;
+}
+.select ul {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+  z-index: 100;
+}
+.select ul li {
+  display: block;
+  text-align: left;
+  padding: 0.8em 1em 0.8em 1em;
+  color: #999;
+  cursor: pointer;
+}
+.select ul li:hover {
+  background: #4ebbf0;
+  color: #fff;
+}
+           
 table, th, td {
-  border: 2px solid floralwhite;
+  border: 2px solid pink;
   border-collapse: collapse;
+   padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;
+            margin-top: 0em;
+            width: auto; height: auto;
+            color: palevioletred;
+            font-family: monospace; font-size: 100%;
+            ;text-align: center
+            
 }
 
              
              h1 {
-                color: floralwhite;
+                color: lightsteelblue;
                  font-family: monospace;
                  font-size: 300%;
                   text-align: center;
@@ -29,8 +127,11 @@ table, th, td {
               h2 {
          
                  font-family: monospace;
-                 font-size: 100%;
-                  text-align: center
+                 font-size: 150%;
+                  color: lightsteelblue;
+                  text-align: center;
+                      
+                  
              }
              
               h3 {
@@ -41,91 +142,122 @@ table, th, td {
              }
              
               p {
-                 color: ghostwhite;
+                 color: darkgrey;
                  font-family: monospace;
                  font-size: 200%;
-                border: 1px solid none; 
-       padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;
-                margin-top: 20px; margin-right: 10px; margin-left: 5px; 
                    text-align: center;
                 
                  
-             } <!--보더는 테두리, 패딩은 보더 안쪽 크기, 마진은 보더 바깥 크기-->
+             } 
              
-             menu {
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 50px;
-}
+             
         
         </style>
     </head>
-    <body style="background-color: cornflowerblue; color:white">
+    <body style="background: none; color:lightsteelblue">
+
+
 
       
-    <!--iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials" height="200px" width="50%" style="border:5px solid black;">
-</iframe>
-
-<iframe src="/default.asp" width="70%" height="300" style="border:5px solid black;">
-</iframe>
-
-<iframe src="/default.asp" width="100%" height="100" style="border:none;">
-</iframe-->
-        
-        
-        
         
         <table>
             <colgroup>
-    <!--col span="2" style="background-color:darkgray"-->
-    <col style="background-color: none">
+   
+    <col style= "font-size: 100%"; width="30%"; >
                
   </colgroup>
             
   <tr>
-    <th height="200"; colspan="3">  <h1> &#10024; Willkommen &#10024; 환영합니다 &#10024; Welcome &#10024;</h1>
-         <p style="font-size: 150%; font-family:monospace">Resin-Accessoires made by <b>binsjp</b>© <br> <a href="jsh249(@jsh249.de)%20%E2%80%A2%20Instagram%20%EC%82%AC%EC%A7%84%20%EB%B0%8F%20%EB%8F%99%EC%98%81%EC%83%81.webloc"><b>@jsh249.de</b></a> </p></th>
+    <th  height= "200px"; colspan= "2";> 
+        
+                            
+         <script type="text/javascript">
+	color_light=new Array; 
+	color_dark=new Array; 
+	//---------------------- 
+	color_light[0]='#E2A9F3'; 
+	color_light[1]='#F8E0F7'; 
+	color_light[2]='#F2E0F7'; 
+	color_light[3]='#F8E0EC'; 
+	color_light[4]='#F2E0F7'; 
+	//---------------------- 
+	color_dark[0]='#A9BCF5'; 
+	color_dark[1]='#D0A9F5'; 
+	color_dark[2]='#A9A9F5'; 
+	color_dark[3]='#BCA9F5'; 
+	//---------------------- 
+	function fontColor(id,str,varname,speed) 
+	{ 
+	document.write('<span id='+id+'>'); 
+	document.write(str); 
+	document.write('</span>'); 
+	document.write('<'+'script>'); 
+	document.write('count'+id+'=0;'); 
+	document.write('function function'+id+'()'); 
+	document.write('{'); 
+	document.write(id+'.style.color='+varname+'[count'+id+'];'); 
+	document.write('count'+id+'++;'); 
+	document.write('if(('+varname+'.length-1) < count'+id+'){count'+id+'=0;}'); 
+	document.write('setTimeout(\'function'+id+'()\','+speed+');'); 
+	document.write('}'); 
+	document.write('function'+id+'();'); 
+	document.write('<'+'/script>'); 
+} 
+</script>
+<p style="font-size:20pt;"> 
+<script>fontColor('d1',' &#10024; Willkommen &#10024; 환영합니다 &#10024; Welcome &#10024;','color_dark',400);</script> 
+</p>                                                      
+        
+        
+         <p style="font-size: 150%; font-family:monospace background: lavender;">Resin-Accessoires made by <b>binsjp</b>© <br> <a href="https://www.instagram.com/jsh249.de/"><b>@jsh249.de</b></a> </p></th>
  </tr>
   
+         
             
  
             
   <tr>
-    <td height="500;" width="20%">  
+    <td  height="70%;" width="30%">  
         
-        <a href="Shakers.html"><p>Shakers</p></a>
-    
-            <a href="Keyring.html">
-          <p>Keyrings</p></a>
         
-    
-    
-           <a href="Nametags.html"><p>Nametags</p></a>
-    
-    
-       
-        <a href="Earrings.html"><p>Earrings<!-- anker, hypertext-referens--></p></a>
-    
-    
-    </td>
+    <div class="select select--white">
+                <h2 class="placeholder">Products</h2>
+  <ul>
+    <li><a href="Shakers.html"><h2>Shakers</h2></a></li>
+    <li> <a href="Keyring.html"><h2>Keyrings</h2></a></li>
+    <li><a href="Nametags.html"><h2>Nametags</h2></a></li>
+    <li><a href="Earrings.html"><h2>Earrings</h2></a></li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script type="text/javascript">
+$('.select').on('click','.placeholder',function(){
+  var parent = $(this).closest('.select');
+  if ( ! parent.hasClass('is-open')){
+    parent.addClass('is-open');
+    $('.select.is-open').not(parent).removeClass('is-open');
+  }else{
+    parent.removeClass('is-open');
+  }
+}).on('click','ul>li',function(){
+  var parent = $(this).closest('.select');
+  parent.removeClass('is-open').find('.placeholder').text( $(this).text() );
+});
+</script>
+ </td>
     
     
       
-      <td colpan="2">
+      <td height="70%"; colpan="2">
           
          
-       <!--img src="https://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"-->
-        
-         
-            <p><img src="keyring_1.jpg" alt="sso" style="width:auto;height:300px;">
+   
+            <p><img src="web_image/keyring1.jpg" alt=keyring1; style="width:auto;height:300px;">
                 
-           <img src="shaker_4.png" alt="shakers" style="width:auto;height:300px;">
+           <img src="web_image/frame1.png" alt="frame1" style="width:auto;height:300px;">
     
-                <img src="work.png" alt="uv" style="width:auto;height:300px;"></p>
+                <img src="web_image/shaker1.jpg" alt="shaker1" style="width:auto;height:300px;"></p>
 
       
       </td>
@@ -137,102 +269,25 @@ table, th, td {
 </table>
         
         
-   <hr style="color: aliceblue"><!-- 줄긋기-->
-     
+   <hr style="color: aliceblue">
+        
             <h3>Copyright Seunghee</h3>
     
         
-       
-        <!--h3 style="color:floralwhite;">&#129505;Menu&#129505;</h3>
-        
-        
-          <a href="Shakers.html">
-              <p><input type="button" value="Shakers" onclick="
-        document.querySelector('body').style.backgroundColor='blue';
-                document.querySelector('body').style.color='white'";></p></a>
-                                                              
-       
-       <a href="Keyring.html">
-         <p> <input type="button" value="Keyrings" onclick="
-        document.querySelector('body').style.backgroundColor='blue';
-                document.querySelector('body').style.color='white'";></p>
-           <!--p style="color:cadetblue; font-size:16; font-family:monospace">Keyrings</p></a--> <!-- paragraph p 줄바꿈 자동임. 꾸며주기-->
-         
-        
-           <!--a href="Nametags.html">
-               <p><input type="button" value="Nametags" onclick="
-        document.querySelector('body').style.backgroundColor='blue';
-                document.querySelector('body').style.color='white'";></p>
-               <!--p style="color:darkseagreen; font-size:16; font-family:monospace">Nametags</p></a-->
-            
-        
-        <!--a href="Earrings.html">
-            <p><input type="button" value="Earrings" onclick="
-        document.querySelector('body').style.backgroundColor='blue';
-                      document.querySelector('body').style.color='white'";></p></a>
-               
-               
-            
-            
-        <!--p style="color:cadetblue; font-size:16; font-family: monospace">Earrings</p></a--><!-- anker, hypertext-referens-->
-        
-        
       <br>
             
-        
-               
-           
-        <h2 id="demo"></h2>
-            <script>
-            var d= new Date("2020/11/12");
-            document.getElementById("demo").innerHTML=d;
+         <p id="demo"></p>
+                           <script>
+          
+                                 var d = new Date();
+        document.getElementById("demo").innerHTML=d.toDateString();
+                               
             </script>
+       
+           
+      
         <br>
-        
-        
-        
-        <!--h1>header1</h1>
-        
-        <br>
-        <h2>header2</h2>
-        <br>
-        <h3>header3</h3>
-         <br>
-        <h4 style="color:blue; ">header4</h4>
-         <br>
-        <h5>header5</h5>
-         <br>
-        <h6>header6</h6>
-        <br>
-        
-        <ol> <!--순서list-->
-  <!--li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>
-
-<ul><!--순서x-->
-  <!--li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-        
-  <br>
-        <menu type="context" id="mymenu">
-  <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png">
-  </menuitem>
-  <menu label="Share on...">
-    <menuitem label="Twitter" icon="ico_twitter.png"
-    onclick="window.open('//twitter.com/intent/tweet?text='+window.location.href);">
-    </menuitem>
-    <menuitem label="Facebook" icon="ico_facebook.png"
-    onclick="window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);">
-    </menuitem>
-  </menu>
-  <menuitem label="Email This Page"
-  onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
-</menu-->
-        
+       
 
     </body>
     
