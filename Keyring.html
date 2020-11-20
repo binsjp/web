@@ -81,7 +81,43 @@
 <th colspan="2" height= "200";> 
                             
                                                                
-        <h1> &#10024; Keyrings &#10024;</h1>
+ <script type="text/javascript">
+	color_light=new Array; 
+	color_dark=new Array; 
+	//---------------------- 
+	color_light[0]='#E2A9F3'; 
+	color_light[1]='#F8E0F7'; 
+	color_light[2]='#F2E0F7'; 
+	color_light[3]='#F8E0EC'; 
+	color_light[4]='#F2E0F7'; 
+	//---------------------- 
+	color_dark[0]='#9DBBD8'; 
+	color_dark[1]='#7CA0C4'; 
+	color_dark[2]='#9DBBD8'; 
+	color_dark[3]='#7CA0C4'; 
+	//---------------------- 
+	function fontColor(id,str,varname,speed) 
+	{ 
+	document.write('<span id='+id+'>'); 
+	document.write(str); 
+	document.write('</span>'); 
+	document.write('<'+'script>'); 
+	document.write('count'+id+'=0;'); 
+	document.write('function function'+id+'()'); 
+	document.write('{'); 
+	document.write(id+'.style.color='+varname+'[count'+id+'];'); 
+	document.write('count'+id+'++;'); 
+	document.write('if(('+varname+'.length-1) < count'+id+'){count'+id+'=0;}'); 
+	document.write('setTimeout(\'function'+id+'()\','+speed+');'); 
+	document.write('}'); 
+	document.write('function'+id+'();'); 
+	document.write('<'+'/script>'); 
+} 
+</script>
+<p style="font-size:20pt;"> 
+<h1><script>fontColor('d1','&#10024; Keyrings &#10024;','color_dark',400);</script></h1>
+</p>                                   
+   
         
          <p style="font-size: 150%; font-family:monospace">Resin-Accessoires made by <b>binsjp</b>© <br> <a href="https://www.instagram.com/jsh249.de/"><b>@jsh249.de</b></a> </p></th>
  </tr>
