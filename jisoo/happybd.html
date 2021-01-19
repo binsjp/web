@@ -1,0 +1,154 @@
+<html>
+<head>
+
+<style>    
+html {
+   background: linear-gradient(to right, lavender, white, white, lavender);
+    }
+    
+    h1 {
+        font-family: monospace;
+        font-size: 50;
+        text-align-last: center;
+        
+    }    
+    p{
+        text-align: center;
+        line-height: 40px;
+        font-size: 14;
+        font-family: sans-serif;
+        color: mediumpurple;
+    }
+    h2{
+        text-align: center;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: hotpink;
+    }
+    
+   .back {
+        
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    opacity: 0.7;
+        
+    }    
+
+    
+    
+    input {
+    text-align: center;    
+    
+    }
+table, th, td {
+  border: 0px dotted pink;
+  border-collapse: collapse;
+   padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;
+    margin-top: 0em;
+    width: 1000px;
+    height: 500px;
+
+    }
+    
+  
+    
+</style>
+    
+<script>
+
+    var myText = "우리의 섹스를 위하여 화이팅"
+
+function change() {
+    
+    document.getElementById("change_ryan").src = "ryan_fun.gif";
+    document.getElementById("printText").innerHTML = myText;
+    }    
+</script>
+    
+</head>
+    
+    
+    
+    
+    
+<body>
+
+<table>
+
+            
+<tr>
+     
+
+    <td>
+            <p>사랑하는 여보야 안뇽<img src="ryan_rose.gif" style="width:80px;height:auto;"> <br>
+            여보의 생일을 멀리서나마 진심으로 축하해요! <br>
+            <img src="couple_kiss.gif" style="width:80px;height:auto;">그리구 우리의 4주년도 추카추카! <img src="couple.gif" style="width:80px;height:auto;"><br>
+            작년에도 올 해도 같이 보내지 못 했지만,<br> 마음만은 함께 한다는걸 잊지 마세요.<br>
+            선물도 못 주고.. 휴가도 못 나가고, 연락도 잘 못 하고, <br>아쉬운 마음도 크고, 여보가 고생이 많지만..<br>
+            <img src="apeach_happy.gif" style="width:80px;height:auto;">곧 볼 수 있을 거라는 생각에 행복합니당.
+            </p>
+ 
+            <h2 id = "printText"></h2>
+            <p><input type= "image" img src="ryan_gift.gif" onclick="change()" id = "change_ryan" width="120px" height="auto">☜ 클릭하시오 후방 주의</p>
+
+            
+        
+            <p>여보야 많이 사랑한다 알지?<br>얼른 보자 내꾸~~~</p>
+
+            <p><img src="poos.gif" width="300px" height="auto" ></p>
+            <p>2021.01.24<br>- 여보의 승희가 -   </p>
+
+    </td>
+    </tr>
+    </table>
+<script>
+    
+ color_dark2=new Array;
+        color_dark2[0]='#D5CFFB';
+      color_dark2[1]='#E2CFFB';               
+        color_dark2[2]='#F0CFFB';
+        color_dark2[3]='#FBCFDF';
+        color_dark2[4]='#FBE2CF';
+      color_dark2[5]='#FBF9CF';
+      color_dark2[6]='#E1FBCF';
+      color_dark2[7]='#CFE4FB'; 
+
+      var count = 0;
+       
+        function fontColor() {
+         myHello.style.color = color_dark2[count++];         
+         
+         if( (color_dark2.length) <= count)
+         {
+            count=0;
+         }         
+         
+         //count %= color_dark2.length;       
+      }
+
+
+      function fontColorTimeOut() {
+         fontColor();
+         setTimeout(fontColorTimeOut, 400);
+      }
+
+   // 실행 1
+     // setInterval(fontColor, 400); 
+   
+   // 실행 2
+   fontColorTimeOut();
+   
+       
+                
+
+   </script>  
+
+    
+    
+    
+    
+
+    
+</body>
+</html>
