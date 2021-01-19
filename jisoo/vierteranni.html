@@ -148,7 +148,10 @@ function change() {
     
     
 <script>
-
+function myClose(){
+   window.close();
+   
+}
 var Pass = "249";        
 var myPass = prompt("비밀번호를 입력하세요.\n 힌트: 지수 이메일 주소 숫자 OOO");
 
@@ -157,7 +160,7 @@ if (Pass == myPass)  {
     onload.src = "vierteranni.html"
 } else {
     alert("비밀번호가 틀렸습니다.")
-      window.close("https://binsjp.github.io/web/");
+      myClose();
 }  
     
 </script>    
